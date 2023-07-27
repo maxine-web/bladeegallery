@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import "overlay";
+// General Styling
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+body {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+#warning {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+
+  p {
+    width: 50%;
+  }
+  span {
+    font-weight: bold;
+  }
+
+  #button-warning {
+    margin: 1rem;
+    padding: 2rem;
+    a {
+      background: red;
+      font-weight: bold;
+      text-decoration: none;
+      color: #000;
+      border-radius: 5%;
+      font-size: 30px;
+    }
+  }
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+
+  h1 {
+    color: #9164e6;
+    text-shadow: 3px 2px 4px #fff;
+    transform: scale(4, 1);
+    cursor: default;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+    a {
+      color: red;
+      background: blue;
+      border-radius: 75%;
+      font-weight: bold;
+      font-size: 30px;
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+header {
+  height: 20vh;
+  width: 100%;
+  background-image: url("../img/bg/footer-bg.png");
+  background-position-x: 50%;
+  background-position-y: 75%;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: "Gloria Hallelujah", Helvetica, sans-serif;
+}
+
+.information {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 60vh;
+  iframe {
+    height: 100%;
+    width: 50vw;
+    border: none;
+  }
+
+  .video {
+    opacity: 0.8;
+    overflow: hidden;
+  }
+
+  #video-home {
+    opacity: 1;
+  }
+
+  .about {
+    overflow: hidden;
+  }
+}
+
+.backgr {
+  position: fixed;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.4;
+  }
+}
+
+footer {
+  height: 20vh;
+  background-image: url("../img/bg/banner.png");
+  background-position: 50%, 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav-menu {
+  display: flex;
+  width: 100%;
+  ul {
+    display: flex;
+    position: fixed;
+    top: 81.5%;
+    width: 100%;
+    margin-left: -50px;
+    justify-content: center;
+    gap: 6rem;
+    list-style: none;
+    li {
+      a {
+        img {
+          position: fixed;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+
+        #selected {
+          border: #9164e6 4px dotted;
+          z-index: 1;
+          animation-name: rotate;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+
+        &:hover {
+          img {
+            border: pink 4px dotted;
+            animation-name: rotate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            z-index: 2;
+          }
+        }
+
+        &:active {
+          img {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import "layouts";

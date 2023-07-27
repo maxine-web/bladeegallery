@@ -1,0 +1,825 @@
+//tiny phone screens
+@media (max-width: 350px) {
+  header {
+    height: 10vh;
+  }
+  .banner {
+    ul {
+      li {
+        a {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .middle {
+    height: 80vh;
+    width: 100%;
+    background-image: url(../img/bg/home-bg.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: repeat;
+  }
+
+  .information {
+    flex-direction: column;
+    height: 80vh;
+
+    .about,
+    .video {
+      overflow: hidden;
+      iframe {
+        width: 100%;
+        height: 40vh;
+      }
+    }
+  }
+
+  .nav-menu {
+    ul {
+      top: 93%;
+      gap: 2.5rem;
+      margin-left: -25px;
+      li {
+        a {
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    display: none;
+  }
+
+  @mixin overlay {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.9;
+  }
+
+  #content {
+    &-eversince::before {
+      @include overlay;
+      background-image: url("../img/bg/eversince-bg.png");
+    }
+    &-redlight::before {
+      @include overlay;
+      background-image: url("../img/bg/redlight-bg.png");
+    }
+    &-exeter::before {
+      @include overlay;
+      background-image: url("../img/bg/exeter-bg.png");
+    }
+    &-333::before {
+      @include overlay;
+      background-image: url("../img/bg/333-bg.png");
+    }
+    &-goodluck::before {
+      @include overlay;
+      background-image: url("../img/bg/goodluck-bg.png");
+    }
+    &-thefool::before {
+      @include overlay;
+      background-image: url("../img/bg/thefool-bg.png");
+    }
+    &-crest::before {
+      @include overlay;
+      background-image: url("../img/bg/crest-bg.png");
+    }
+    &-spiderr::before {
+      @include overlay;
+      background-image: url("../img/bg/spiderr-bg.png");
+    }
+
+    &-gluee::before {
+      @include overlay;
+      background-image: url("../img/bg/gluee-bg.png");
+    }
+    &-wod::before {
+      @include overlay;
+      background-image: url("../img/bg/wod-bg.png");
+    }
+    &-icedancer::before {
+      @include overlay;
+      background-image: url("../img/bg/icedancer-bg.png");
+    }
+
+    &-ripbladee::before {
+      @include overlay;
+      background-image: url("../img/bg/ripbladee-bg.png");
+    }
+    &-plasticsurgery::before {
+      @include overlay;
+      background-image: url("../img/bg/plasticsurgery-bg.png");
+    }
+    &-sunsetinsilvercity::before {
+      @include overlay;
+      background-image: url("../img/bg/sunsetinsilvercity-bg.png");
+    }
+    &-exile::before {
+      @include overlay;
+      background-image: url("../img/bg/exile-bg.png");
+    }
+    &-vanillasky::before {
+      @include overlay;
+      background-image: url("../img/bg/vanillasky-bg.png");
+    }
+
+    &-gtbsgcompilation::before {
+      @include overlay;
+      background-image: url("../img/bg/gtbsgcompilation-bg.png");
+    }
+    &-avp::before {
+      @include overlay;
+      background-image: url("../img/bg/avp-bg.png");
+    }
+    &-dandg::before {
+      @include overlay;
+      background-image: url("../img/bg/d&g-bg.png");
+    }
+    &-trashisland::before {
+      @include overlay;
+      background-image: url("../img/bg/trashisland-bg.png");
+    }
+  }
+}
+//small phone screens
+@media (min-width: 350px) and (max-width: 451px) {
+  header {
+    height: 10vh;
+  }
+  .banner {
+    overflow: hidden;
+    ul {
+      li {
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .middle {
+    height: 80vh;
+    width: 100%;
+    background-image: url(../img/bg/home-bg.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: repeat;
+  }
+
+  .information {
+    flex-direction: column;
+    height: 80vh;
+
+    .about,
+    .video {
+      overflow: hidden;
+      iframe {
+        height: 40vh;
+        width: 100%;
+      }
+    }
+  }
+
+  .nav-menu {
+    ul {
+      top: 91%;
+      gap: 2.5rem;
+      margin-left: -37.5px;
+      li {
+        a {
+          img {
+            width: 75px;
+            height: 75px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 10vh;
+  }
+
+  @mixin overlay {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.9;
+  }
+
+  #content {
+    &-eversince::before {
+      @include overlay;
+      background-image: url("../img/bg/eversince-bg.png");
+    }
+    &-redlight::before {
+      @include overlay;
+      background-image: url("../img/bg/redlight-bg.png");
+    }
+    &-exeter::before {
+      @include overlay;
+      background-image: url("../img/bg/exeter-bg.png");
+    }
+    &-333::before {
+      @include overlay;
+      background-image: url("../img/bg/333-bg.png");
+    }
+    &-goodluck::before {
+      @include overlay;
+      background-image: url("../img/bg/goodluck-bg.png");
+    }
+    &-thefool::before {
+      @include overlay;
+      background-image: url("../img/bg/thefool-bg.png");
+    }
+    &-crest::before {
+      @include overlay;
+      background-image: url("../img/bg/crest-bg.png");
+    }
+    &-spiderr::before {
+      @include overlay;
+      background-image: url("../img/bg/spiderr-bg.png");
+    }
+
+    &-gluee::before {
+      @include overlay;
+      background-image: url("../img/bg/gluee-bg.png");
+    }
+    &-wod::before {
+      @include overlay;
+      background-image: url("../img/bg/wod-bg.png");
+    }
+    &-icedancer::before {
+      @include overlay;
+      background-image: url("../img/bg/icedancer-bg.png");
+    }
+
+    &-ripbladee::before {
+      @include overlay;
+      background-image: url("../img/bg/ripbladee-bg.png");
+    }
+    &-plasticsurgery::before {
+      @include overlay;
+      background-image: url("../img/bg/plasticsurgery-bg.png");
+    }
+    &-sunsetinsilvercity::before {
+      @include overlay;
+      background-image: url("../img/bg/sunsetinsilvercity-bg.png");
+    }
+    &-exile::before {
+      @include overlay;
+      background-image: url("../img/bg/exile-bg.png");
+    }
+    &-vanillasky::before {
+      @include overlay;
+      background-image: url("../img/bg/vanillasky-bg.png");
+    }
+
+    &-gtbsgcompilation::before {
+      @include overlay;
+      background-image: url("../img/bg/gtbsgcompilation-bg.png");
+    }
+    &-avp::before {
+      @include overlay;
+      background-image: url("../img/bg/avp-bg.png");
+    }
+    &-dandg::before {
+      @include overlay;
+      background-image: url("../img/bg/d&g-bg.png");
+    }
+    &-trashisland::before {
+      @include overlay;
+      background-image: url("../img/bg/trashisland-bg.png");
+    }
+  }
+}
+
+//larger phone screens
+@media (min-width: 451px) and (max-width: 481px) {
+  header {
+    height: 10vh;
+  }
+  .banner {
+    overflow: hidden;
+    ul {
+      li {
+        padding: 0.5rem;
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .middle {
+    height: 80vh;
+    width: 100%;
+    background-image: url(../img/bg/home-bg.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: repeat;
+  }
+
+  .information {
+    flex-direction: column;
+    height: 80vh;
+    .about,
+    .video {
+      overflow: hidden;
+      iframe {
+        height: 40vh;
+        width: 100%;
+      }
+    }
+  }
+
+  .nav-menu {
+    ul {
+      top: 91%;
+      gap: 3rem;
+      margin-left: -37.5px;
+      li {
+        a {
+          img {
+            width: 75px;
+            height: 75px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 10vh;
+  }
+
+  @mixin overlay {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.9;
+  }
+
+  #content {
+    &-eversince::before {
+      @include overlay;
+      background-image: url("../img/bg/eversince-bg.png");
+    }
+    &-redlight::before {
+      @include overlay;
+      background-image: url("../img/bg/redlight-bg.png");
+    }
+    &-exeter::before {
+      @include overlay;
+      background-image: url("../img/bg/exeter-bg.png");
+    }
+    &-333::before {
+      @include overlay;
+      background-image: url("../img/bg/333-bg.png");
+    }
+    &-goodluck::before {
+      @include overlay;
+      background-image: url("../img/bg/goodluck-bg.png");
+    }
+    &-thefool::before {
+      @include overlay;
+      background-image: url("../img/bg/thefool-bg.png");
+    }
+    &-crest::before {
+      @include overlay;
+      background-image: url("../img/bg/crest-bg.png");
+    }
+    &-spiderr::before {
+      @include overlay;
+      background-image: url("../img/bg/spiderr-bg.png");
+    }
+
+    &-gluee::before {
+      @include overlay;
+      background-image: url("../img/bg/gluee-bg.png");
+    }
+    &-wod::before {
+      @include overlay;
+      background-image: url("../img/bg/wod-bg.png");
+    }
+    &-icedancer::before {
+      @include overlay;
+      background-image: url("../img/bg/icedancer-bg.png");
+    }
+
+    &-ripbladee::before {
+      @include overlay;
+      background-image: url("../img/bg/ripbladee-bg.png");
+    }
+    &-plasticsurgery::before {
+      @include overlay;
+      background-image: url("../img/bg/plasticsurgery-bg.png");
+    }
+    &-sunsetinsilvercity::before {
+      @include overlay;
+      background-image: url("../img/bg/sunsetinsilvercity-bg.png");
+    }
+    &-exile::before {
+      @include overlay;
+      background-image: url("../img/bg/exile-bg.png");
+    }
+    &-vanillasky::before {
+      @include overlay;
+      background-image: url("../img/bg/vanillasky-bg.png");
+    }
+
+    &-gtbsgcompilation::before {
+      @include overlay;
+      background-image: url("../img/bg/gtbsgcompilation-bg.png");
+    }
+    &-avp::before {
+      @include overlay;
+      background-image: url("../img/bg/avp-bg.png");
+    }
+    &-dandg::before {
+      @include overlay;
+      background-image: url("../img/bg/d&g-bg.png");
+    }
+    &-trashisland::before {
+      @include overlay;
+      background-image: url("../img/bg/trashisland-bg.png");
+    }
+  }
+}
+
+//tablet screens
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    height: 10vh;
+  }
+  .banner {
+    overflow: hidden;
+    ul {
+      flex-direction: row;
+      li {
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .middle {
+    height: 80vh;
+    width: 100%;
+    background-image: url(../img/bg/home-bg.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: repeat;
+  }
+
+  .information {
+    flex-direction: column;
+    height: 80vh;
+
+    .about,
+    .video {
+      overflow: hidden;
+      iframe {
+        height: 40vh;
+        width: 100%;
+      }
+    }
+  }
+
+  .nav-menu {
+    ul {
+      top: 91%;
+      gap: 3rem;
+      margin-left: -37.5px;
+      li {
+        a {
+          img {
+            width: 75px;
+            height: 75px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 10vh;
+  }
+
+  @mixin overlay {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.9;
+  }
+
+  #content {
+    &-eversince::before {
+      @include overlay;
+      background-image: url("../img/bg/eversince-bg.png");
+    }
+    &-redlight::before {
+      @include overlay;
+      background-image: url("../img/bg/redlight-bg.png");
+    }
+    &-exeter::before {
+      @include overlay;
+      background-image: url("../img/bg/exeter-bg.png");
+    }
+    &-333::before {
+      @include overlay;
+      background-image: url("../img/bg/333-bg.png");
+    }
+    &-goodluck::before {
+      @include overlay;
+      background-image: url("../img/bg/goodluck-bg.png");
+    }
+    &-thefool::before {
+      @include overlay;
+      background-image: url("../img/bg/thefool-bg.png");
+    }
+    &-crest::before {
+      @include overlay;
+      background-image: url("../img/bg/crest-bg.png");
+    }
+    &-spiderr::before {
+      @include overlay;
+      background-image: url("../img/bg/spiderr-bg.png");
+    }
+
+    &-gluee::before {
+      @include overlay;
+      background-image: url("../img/bg/gluee-bg.png");
+    }
+    &-wod::before {
+      @include overlay;
+      background-image: url("../img/bg/wod-bg.png");
+    }
+    &-icedancer::before {
+      @include overlay;
+      background-image: url("../img/bg/icedancer-bg.png");
+    }
+
+    &-ripbladee::before {
+      @include overlay;
+      background-image: url("../img/bg/ripbladee-bg.png");
+    }
+    &-plasticsurgery::before {
+      @include overlay;
+      background-image: url("../img/bg/plasticsurgery-bg.png");
+    }
+    &-sunsetinsilvercity::before {
+      @include overlay;
+      background-image: url("../img/bg/sunsetinsilvercity-bg.png");
+    }
+    &-exile::before {
+      @include overlay;
+      background-image: url("../img/bg/exile-bg.png");
+    }
+    &-vanillasky::before {
+      @include overlay;
+      background-image: url("../img/bg/vanillasky-bg.png");
+    }
+
+    &-gtbsgcompilation::before {
+      @include overlay;
+      background-image: url("../img/bg/gtbsgcompilation-bg.png");
+    }
+    &-avp::before {
+      @include overlay;
+      background-image: url("../img/bg/avp-bg.png");
+    }
+    &-dandg::before {
+      @include overlay;
+      background-image: url("../img/bg/d&g-bg.png");
+    }
+    &-trashisland::before {
+      @include overlay;
+      background-image: url("../img/bg/trashisland-bg.png");
+    }
+  }
+}
+
+//landscape screens
+@media (max-height: 500px) {
+  #warning {
+    font-size: 15px;
+  }
+  header {
+    height: 20vh;
+  }
+  .banner {
+    overflow: hidden;
+    ul {
+      flex-direction: row;
+      li {
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .middle {
+    height: 80vh;
+    width: 100%;
+    background-image: url(../img/bg/home-bg.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: repeat;
+  }
+
+  .information {
+    flex-direction: column;
+    height: 80vh;
+
+    .video {
+      overflow: hidden;
+      iframe {
+        display: none;
+      }
+    }
+
+    .about {
+      overflow: hidden;
+      iframe {
+        height: 80vh;
+        width: 100%;
+      }
+    }
+  }
+
+  .nav-menu {
+    ul {
+      top: 80%;
+      gap: 3rem;
+      margin-left: -37.5px;
+      li {
+        a {
+          img {
+            width: 75px;
+            height: 75px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    display: none;
+  }
+
+  @mixin overlay {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.9;
+  }
+
+  #content {
+    &-eversince::before {
+      @include overlay;
+      background-image: url("../img/bg/eversince-bg.png");
+    }
+    &-redlight::before {
+      @include overlay;
+      background-image: url("../img/bg/redlight-bg.png");
+    }
+    &-exeter::before {
+      @include overlay;
+      background-image: url("../img/bg/exeter-bg.png");
+    }
+    &-333::before {
+      @include overlay;
+      background-image: url("../img/bg/333-bg.png");
+    }
+    &-goodluck::before {
+      @include overlay;
+      background-image: url("../img/bg/goodluck-bg.png");
+    }
+    &-thefool::before {
+      @include overlay;
+      background-image: url("../img/bg/thefool-bg.png");
+    }
+    &-crest::before {
+      @include overlay;
+      background-image: url("../img/bg/crest-bg.png");
+    }
+    &-spiderr::before {
+      @include overlay;
+      background-image: url("../img/bg/spiderr-bg.png");
+    }
+
+    &-gluee::before {
+      @include overlay;
+      background-image: url("../img/bg/gluee-bg.png");
+    }
+    &-wod::before {
+      @include overlay;
+      background-image: url("../img/bg/wod-bg.png");
+    }
+    &-icedancer::before {
+      @include overlay;
+      background-image: url("../img/bg/icedancer-bg.png");
+    }
+
+    &-ripbladee::before {
+      @include overlay;
+      background-image: url("../img/bg/ripbladee-bg.png");
+    }
+    &-plasticsurgery::before {
+      @include overlay;
+      background-image: url("../img/bg/plasticsurgery-bg.png");
+    }
+    &-sunsetinsilvercity::before {
+      @include overlay;
+      background-image: url("../img/bg/sunsetinsilvercity-bg.png");
+    }
+    &-exile::before {
+      @include overlay;
+      background-image: url("../img/bg/exile-bg.png");
+    }
+    &-vanillasky::before {
+      @include overlay;
+      background-image: url("../img/bg/vanillasky-bg.png");
+    }
+
+    &-gtbsgcompilation::before {
+      @include overlay;
+      background-image: url("../img/bg/gtbsgcompilation-bg.png");
+    }
+    &-avp::before {
+      @include overlay;
+      background-image: url("../img/bg/avp-bg.png");
+    }
+    &-dandg::before {
+      @include overlay;
+      background-image: url("../img/bg/d&g-bg.png");
+    }
+    &-trashisland::before {
+      @include overlay;
+      background-image: url("../img/bg/trashisland-bg.png");
+    }
+  }
+}
+
+// middle section for large screens, fix for now...
+@media (min-width: 768px) and (min-height: 500px) {
+  .middle {
+    height: 60vh;
+    width: 100%;
+    background-image: url(../img/bg/home-bg.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: repeat;
+  }
+}
+
+//smaller windows on desktop
+@media (max-width: 768px) and (min-height: 500px) {
+  #warning {
+    font-size: 20px;
+  }
+  header {
+    height: 20vh;
+  }
+
+  footer {
+    display: none;
+  }
+}
