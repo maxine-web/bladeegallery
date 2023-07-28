@@ -1,5 +1,11 @@
 //tiny phone screens
 @media (max-width: 350px) {
+  #warning {
+    p {
+      overflow: scroll;
+      width: 75%;
+    }
+  }
   header {
     height: 10vh;
   }
@@ -632,7 +638,11 @@
 //landscape screens
 @media (max-height: 500px) {
   #warning {
-    font-size: 15px;
+    font-size: 20px;
+    p {
+      overflow: scroll;
+      width: 75%;
+    }
   }
   header {
     height: 20vh;
@@ -808,12 +818,19 @@
     background-size: 50%;
     background-repeat: repeat;
   }
+  footer {
+    width: 100%;
+    background-repeat: repeat;
+  }
 }
 
 //smaller windows on desktop
 @media (max-width: 768px) and (min-height: 500px) {
   #warning {
     font-size: 20px;
+    p {
+      width: 75%;
+    }
   }
   header {
     height: 20vh;
